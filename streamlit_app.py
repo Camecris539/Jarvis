@@ -24,7 +24,7 @@ if api_key:
         
         with st.chat_message("assistant"):
             with st.spinner("Sto pensando..."):
-                response = model.generate_content("Sei Jarvis di Metà. Rispondi corto e diretto: " + prompt)
+                response = model.generate_content("Sei Jarvis di cristian. Rispondi corto e diretto: " + prompt)
                 st.markdown(response.text)
         st.session_state.messages.append({"role": "assistant", "content": response.text})
 else:
